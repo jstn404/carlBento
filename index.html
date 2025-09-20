@@ -12,47 +12,48 @@
 </head>
 <body>
   <!-- Mobile-only Bootstrap Navbar -->
-<nav class="navbar navbar-dark d-block d-md-none fixed-top navbar-mobile">
-  <div class="container-fluid">
+  <nav class="navbar navbar-dark d-block d-md-none fixed-top navbar-mobile">
+    <div class="container-fluid">
 
-    <!-- Brand -->
-    <a class="navbar-brand" href="#">Portfolio</a>
+      <!-- Brand -->
+      <a class="navbar-brand" href="#">Portfolio</a>
 
-    <!-- Toggler -->
-    <button class="navbar-toggler" type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#mobileNav"
-            aria-controls="mobileNav"
-            aria-expanded="false"
-            aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
+      <!-- Toggler -->
+      <button class="navbar-toggler" type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#mobileNav"
+              aria-controls="mobileNav"
+              aria-expanded="false"
+              aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
-    <!-- Collapsible content -->
-    <div class="collapse navbar-collapse" id="mobileNav">
-      <ul class="navbar-nav w-100">
+      <!-- Collapsible content -->
+      <div class="collapse navbar-collapse" id="mobileNav">
+        <ul class="navbar-nav w-100">
 
-        <!-- Contact Links -->
-        <li class="nav-item"><a class="nav-link link-light" href="https://www.linkedin.com/in/carl-justin-alvarado-747279278/" target="_blank">LinkedIn</a></li>
-        <li class="nav-item"><a class="nav-link link-light" href="mailto:youremail@example.com" target="_blank">Email</a></li>
-        <li class="nav-item"><a class="nav-link link-light" href="https://ph.jobslin.com" target="_blank">Jobslin</a></li>
-        <li class="nav-item"><a class="nav-link link-light" href="https://ph.jobstreet.com/profile/carljustin-alvarado-Gk5TD80C52" target="_blank">Jobstreet</a></li>
-        <li class="nav-item"><a class="nav-link link-light" href="https://www.facebook.com/profile.php?id=61564626843296" target="_blank">Facebook</a></li>
-        <li class="nav-item"><a class="nav-link link-light" href="https://www.tiktok.com/@cjsalvarado" target="_blank">TikTok</a></li>
+          <!-- Contact Links -->
+          <li class="nav-item"><a class="nav-link link-light" href="https://www.linkedin.com/in/carl-justin-alvarado-747279278/" target="_blank">LinkedIn</a></li>
+          <li class="nav-item"><a class="nav-link link-light" href="mailto:youremail@example.com" target="_blank">Email</a></li>
+          <li class="nav-item"><a class="nav-link link-light" href="https://ph.jobslin.com" target="_blank">Jobslin</a></li>
+          <li class="nav-item"><a class="nav-link link-light" href="https://ph.jobstreet.com/profile/carljustin-alvarado-Gk5TD80C52" target="_blank">Jobstreet</a></li>
+          <li class="nav-item"><a class="nav-link link-light" href="https://www.facebook.com/profile.php?id=61564626843296" target="_blank">Facebook</a></li>
+          <li class="nav-item"><a class="nav-link link-light" href="https://www.tiktok.com/@cjsalvarado" target="_blank">TikTok</a></li>
 
-        <!-- Resume Button -->
-        <li class="nav-item mt-3">
-          <a class="btn btn-outline-light w-100" href="https://drive.google.com/file/d/1KKtd6sjg8XTbYBa8YpzuZP8nwV2vcCeN/view?usp=sharing" target="_blank">
-            Resume <i class="bi bi-box-arrow-up-right"></i>
-          </a>
-        </li>
-      </ul>
+          <!-- Resume Button -->
+          <li class="nav-item mt-3">
+            <a class="btn btn-outline-light w-100" href="https://drive.google.com/file/d/1KKtd6sjg8XTbYBa8YpzuZP8nwV2vcCeN/view?usp=sharing" target="_blank">
+              Resume <i class="bi bi-box-arrow-up-right"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
     </div>
-  </div>
-</nav>
+  </nav>
+
   <div class="main-body">
     <div class="head-text fw-medium">Portfolio*</div>
-    <div class="left-grid" id="leftGrid" onclick="toggleContent()">
+    <div class="left-grid" id="leftGrid" onclick="toggleContent()" data-aos="fade-right">
       <div class="content" id="content1">
         <p class="intro fw-medium">Hello,<br> I’m <span class="text-uppercase fw-bold">Carl!</span></p>
         <p data-typewriter="on" class="desc">UI/UX - Graphic Designer</p>
@@ -96,13 +97,13 @@
     </div>
 
 
-    <div class="right-grid">
+    <div class="right-grid" data-aos="fade-left" data-aos-delay="200" data-aos-duration="1000">
       <div class="highlight">
         <p class="display-4 fw-bold mb-2">UI/UX Projects</p>
         <p class="h4 text-muted">!SOON!</p>
       </div>
 
-      <div class="work-grid">
+      <div class="work-grid" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">
         <a href="https://www.figma.com/proto/v6bFcPF8IiUSNVq5GVD5sv/Creative-Portfolio?node-id=1-2&t=1ijms5W8NGtrsDyt-1" target="_blank" class="work-one">
           <div class="work-subtext">
             <span>Creative Portfolio</span><br>
@@ -170,6 +171,12 @@
       }
       showingFirst = !showingFirst;
     }
+
+    AOS.init({
+      disable: function() {
+        return window.innerWidth < 576; // disables all animations on small view
+      }
+    });
   </script>
 </body>
 </html>
