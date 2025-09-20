@@ -101,7 +101,7 @@ body{
   background-size: 100%, 100%;
   background-position: 150px 100px, center;
   background-repeat: no-repeat, no-repeat;
- cursor: pointer;
+  cursor: pointer;
   transition: .5s;
 }
 
@@ -117,6 +117,7 @@ body{
     );
   background-size: 50%, 100%;
   background-position: 400px 400px, center;
+  transition: .5s;
 }
 
 .content2-text{
