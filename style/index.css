@@ -89,7 +89,7 @@ body{
 .left-grid {
   background-color: #170101;
   background-image:
-    url('media/myphoto.png'),
+    url('../media/myphoto.png'),
     linear-gradient(
       147deg, 
       rgba(23, 1, 1, 0.8) 0%, 
@@ -108,7 +108,7 @@ body{
 .left-grid.active {
   background-color: #170101;
   background-image:
-    url('media/myphoto.png'), 
+    url('../media/myphoto.png'), 
     linear-gradient(
       147deg, 
       rgba(23, 1, 1, 0.8) 0%, 
@@ -251,7 +251,7 @@ body{
   width: 100%;
   background-color: #1b1f23;
   border-radius: 1rem;
-  background-image: url("media/portfolio.png");
+  background-image: url("../media/portfolio.png");
   background-size: cover;
   background-position-y: -10px;
   background-position-x: center;
@@ -266,7 +266,7 @@ body{
   width: 100%;
   background-color: #1b1f23;
   border-radius: 1rem;
-  background-image: url("media/github.png");
+  background-image: url("../media/github.png");
   background-size: 50%;
   background-position-y: 10px;
   background-position-x: center;
@@ -375,7 +375,7 @@ body{
 .left-grid.active {
   background-color: #170101;
   background-image:
-    url('media/myphoto.png'), 
+    url('../media/myphoto.png'), 
     linear-gradient(
       147deg, 
       rgba(23, 1, 1, 0.8) 0%, 
