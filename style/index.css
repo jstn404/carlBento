@@ -366,7 +366,7 @@ body{
   background-size: cover;
   background-position: center, center;
   background-repeat: no-repeat, no-repeat;
-  padding: 4rem 1rem !important;
+  padding: 10rem 1rem !important;
   display: flex;
   align-items: end;
   justify-content: center;
@@ -385,6 +385,7 @@ body{
     );
   background-size: cover;
   background-position: 150px 500px, center;
+  align-items: center;
 }
 
 .head-text{
@@ -407,6 +408,7 @@ body{
 
 .expertise{
   align-items: center;
+  justify-content: center;
 }
 
 .work-grid {
