@@ -181,6 +181,7 @@ body{
   align-items: center;      /* horizontal center */
   text-align: center;
   transition: .5s;
+  text-decoration: none;
 }
 
 .highlight p{
@@ -195,7 +196,7 @@ body{
 .highlight:hover{
   transform: scale(1.02);
   .display-4{
-    transform: scale(.5);
+    transform: scale(1.5);
     opacity: 20% !important;
   }
   .text-muted{
